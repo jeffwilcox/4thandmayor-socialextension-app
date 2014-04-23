@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30324.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffWilcox.Mayor.SocialExtension", "JeffWilcox.ShimPrototype\JeffWilcox.Mayor.SocialExtension.csproj", "{F9950C5F-D106-4FF0-BED5-26654925616A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffWilcox.Mayor.SocialExtension", "JeffWilcox.Mayor.SocialExtension.csproj", "{F9950C5F-D106-4FF0-BED5-26654925616A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
