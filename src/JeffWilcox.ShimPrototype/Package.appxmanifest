@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
+  <Identity Name="43320JeffWilcox.SocialExtensionfor4thMayor" 
+            Publisher="CN=4106AD28-A1F0-468E-909D-D7DED9205A5E" 
+            Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="f9950c5f-d106-4ff0-bed5-26654925616a" PhonePublisherId="9e34669f-2d60-4854-80af-87621979c7bc" />
+  <Properties>
+    <DisplayName>Social Extension for 4th &amp; Mayor</DisplayName>
+    <PublisherDisplayName>Jeff Wilcox</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.1</OSMinVersion>
+    <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="AGHost.exe" EntryPoint="MainPage.xaml">
+      <m3:VisualElements DisplayName="Social Extension for 4th &amp; Mayor" Square150x150Logo="Logo.png" Square44x44Logo="SmallLogo.png" Description="Extend the capabilities of 4th &amp; Mayor by integrating with the Windows Phone 8.1 check-in experience on the Me tile." ForegroundText="light" BackgroundColor="#464646" ToastCapable="false">
+        <m3:DefaultTile Square71x71Logo="Square71x71Logo.png">
+        </m3:DefaultTile>
+        <m3:ApplicationView MinWidth="width320" />
+        <!--Used in XAML Designer. DO NOT REMOVE-->
+      </m3:VisualElements>
+    </Application>
+  </Applications>
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>AgHostSvcs.dll</Path>
+        <ActivatableClass ActivatableClassId="AgHost.BackgroundTask" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
+</Package>

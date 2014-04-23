@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2014/deployment" AppPlatformVersion="8.1">
+  <DefaultLanguage xmlns="" code="en-US" />
+  <App xmlns="" 
+       ProductID="{f9950c5f-d106-4ff0-bed5-26654925616a}" 
+       Title="Social Extension for 4th &amp; Mayor" 
+       RuntimeType="Silverlight" 
+       Version="1.0.0.0" 
+       Genre="apps.normal" 
+       Author="Jeff Wilcox" 
+       Description="Extend the capabilities of 4th &amp; Mayor by integrating with the Windows Phone 8.1 check-in experience on the Me tile." 
+       SDOptOut="false" 
+       BackUpOptOut="false" 
+       Publisher="Jeff Wilcox" 
+       PublisherID="{4106AD28-A1F0-468E-909D-D7DED9205A5E}">
+    <IconPath IsRelative="true" IsResource="false">Square71x71Logo.scale-240.png</IconPath>
+    <Capabilities>
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" ActivationPolicy="Resume" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="JeffWilcox.Mayor.SocialExtensionToken" TaskName="_default">
+        <TemplateFlip>
+          <SmallImageURI IsRelative="true" IsResource="false">SmallLogo.scale-240.png</SmallImageURI>
+          <Count>0</Count>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Logo.scale-240.png</BackgroundImageURI>
+          <Title>
+          </Title>
+          <BackContent>
+          </BackContent>
+          <BackBackgroundImageURI>
+          </BackBackgroundImageURI>
+          <BackTitle>
+          </BackTitle>
+          <DeviceLockImageURI>
+          </DeviceLockImageURI>
+          <HasLarge>
+          </HasLarge>
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <Extensions>
+      <!-- Integrate with the ME tile check in experience -->
+      <Extension ExtensionName="People_Me_CheckIn" ConsumerID="{bedab396-3404-490c-822e-13309c687e97}" TaskID="_default" />
+    </Extensions>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>
