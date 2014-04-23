@@ -43,6 +43,10 @@
     <Extensions>
       <!-- Integrate with the ME tile check in experience -->
       <Extension ExtensionName="People_Me_CheckIn" ConsumerID="{bedab396-3404-490c-822e-13309c687e97}" TaskID="_default" />
+      
+      <!-- To integrate with the ME tile Post An Updat experience it would be 
+       Extension ExtensionName="People_Me_Publish" ConsumerID="{bedab396-3404-490c-822e-13309c687e97}" TaskID="_default"    
+      -->
     </Extensions>
     <ScreenResolutions>
       <ScreenResolution Name="ID_RESOLUTION_WVGA" />

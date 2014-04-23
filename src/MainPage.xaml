@@ -56,13 +56,6 @@
                     TextWrapping="Wrap">
                     Almost there. Press check-in to find nearby places with the app.
                             </TextBlock>
-                            <TextBlock
-                        Margin="12"
-                    Style="{StaticResource PhoneTextSmallStyle}"
-                                Visibility="Collapsed"
-                    TextWrapping="Wrap">
-                    The trial is fully functional. If you enjoy this creative extension, please consider buying the app to support the developer.
-                        </TextBlock>
                         </StackPanel>
                     </StackPanel>
                 </ScrollViewer>
