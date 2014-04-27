@@ -24,7 +24,7 @@ namespace JeffWilcox.Mayor.SocialExtension
     //   /PeopleExtension?action=Check_In
     //
     // The Post An Update experience would go here:
-    //   /_default#/PeopleExtension?action=Post_Update
+    //   /PeopleExtension?action=Post_Update
 
     /// <summary>
     /// Type for mapping incoming OS-level URI requests into
